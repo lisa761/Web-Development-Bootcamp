@@ -1,0 +1,17 @@
+<% include partials/header %>
+
+
+<h1>You fell in love with: <%= thingVar.toUpperCase() %></h1>
+<% if(thingVar.toLowerCase() === "rusty") { %>
+	<p>GOOD CHOICE!!!</p>
+<% } else { %>
+	<p> THIS IS OKAY TOO</p>
+<% } %> 
+
+<p>P.S. This is the love.ejs file!</p>
+
+<% include partials/footer %>
+
+
+<!-- <%= %> is used to evaluate javascript and add it to the html -->
+<!-- <% %> on the other hand is used on logic statements, that are condition or loop statements so that html knows that they are not supposed to evaluate the value and "add" it to out html code, it just needs to evaluate it -->

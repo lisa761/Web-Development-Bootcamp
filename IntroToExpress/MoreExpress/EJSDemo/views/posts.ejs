@@ -1,0 +1,11 @@
+<% include partials/header %>
+
+<h1>
+	The Posts Page
+</h1>
+
+<% for(var i = 0; i < post.length; i++) { %>
+	<li><%= post[i].title %> - <em><%= post[i].author %></em></li>
+<% } %>
+
+<% include partials/footer %>
